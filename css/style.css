@@ -1,0 +1,94 @@
+/* my guebsite */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../images/sakura-flowers.jpg);
+    background-size: cover;
+    width: 70%;
+    margin: 2rem auto;
+}
+section{
+    background-color: #E89FA8;
+    border-radius: 20px;
+    border: solid 3px #84421F;
+    text-align: center;
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 3px 3px 2px #84421F;
+    margin: 1rem 10rem;
+    border: 4px dashed #F4D2D9;
+}
+nav {
+    background-color: #CE7C8A;
+    padding: 0.2rem;
+}
+nav li {
+    list-style-type:none;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 8rem;
+    background-color: #FADAE5;
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+nav a {
+    border: 3px solid dotted white;
+    font-size: 1rem;
+    color: #83411F;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+}
+a:visited, a:focus, a:hover {
+    background: #C9D182;
+    border-radius: 10px;
+}
+a:active {
+    background:#CE7C8A;
+}
+img {
+margin: 2rem;
+}
+form {
+padding: 0 5rem;
+}
+label {
+display: block;
+}
+textarea {
+height: 10rem;
+padding:1rem;
+}
+button {
+font-size: 1rem;
+margin: 2rem 0;
+background-color: #83411F;
+color: white;
+border:none;
+padding:0.5rem 1rem;
+border-radius: 10px;
+}
+button:hover {
+background-color: #D2729A;
+}
+legend {
+color:white;
+font-weight: bold;
+font-size: 1.3rem;
+margin-top: 1.5rem;
+margin-bottom: 1rem;
+}
+fieldset {
+border: 3px solid white;
+border-radius: 10px;
+margin-bottom: 2rem;
+}
+.bgcopyright {
+    text-decoration: none;
+    color: #CE7C8A;
+}

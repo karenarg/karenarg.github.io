@@ -31,44 +31,11 @@ function sendData() {
       encodeURIComponent(form.querySelector("[name='phone']").value)
   );
   urlEncodedDataPairs.push(
-    encodeURIComponent("date") +
-      "=" +
-      encodeURIComponent(form.querySelector("[name='date']").value)
-  );
-  urlEncodedDataPairs.push(
-    encodeURIComponent("qty") +
-      "=" +
-      encodeURIComponent(form.querySelector("[name='qty']").value)
-  );
-
-  // radio buttons
-  let radio = document.getElementsByName("ufotype");
-  for (var i = 0, length = radio.length; i < length; i++) {
-    if (radio[i].checked) {
-      urlEncodedDataPairs.push(
-        encodeURIComponent("ufotype") + "=" + encodeURIComponent(radio[i].value)
-      );
-    }
-  }
-
-  // dropdown menu
-  var dropdown = form.querySelector("[name='abtype']");
-  urlEncodedDataPairs.push(
-    encodeURIComponent("abtype") +
-      "=" +
-      encodeURIComponent(dropdown.options[dropdown.selectedIndex].text)
-  );
-  urlEncodedDataPairs.push(
     encodeURIComponent("comments") +
       "=" +
       encodeURIComponent(form.querySelector("[name='comments']").value)
   );
-  urlEncodedDataPairs.push(
-    encodeURIComponent("subscribe") +
-      "=" +
-      encodeURIComponent(form.querySelector("[name='subscribe']").checked)
-  );
-
+  
   // Combine the pairs into a single string and replace all %-encoded spaces to
   // the '+' character; matches the behaviour of browser form submissions.
   urlEncodedData = urlEncodedDataPairs.join("&").replace(/%20/g, "+");
@@ -77,7 +44,7 @@ function sendData() {
   XHR.addEventListener("load", function(event) {
     if (XHR.readyState === XHR.DONE) {
       if (XHR.status === 200) {
-        alert("Your order has been received! Check your email.");
+        alert("Your message has been sent! Gu will get back to you.");
       } else {
         alert("Oh oh! We have a problem! " + XHR.responseText + ".");
       }
