@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/galaxy.jpg);
+	/* Designed by tartila / Freepik */
+	background-size:cover;
+	color: aliceblue;
+}
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+	padding: 2rem 0rem 2rem 2rem;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color:#376394;
+}
+p, [for="abtype"], [for="comment"]{
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+section {
+	flex-basis: 55%;
+}
+aside {
+	flex-basis: 30%;
+	background-color: #D9AF75;
+	margin-left: 10%;
+	padding: 1rem 2.5rem;
+	text-align: center;
+	border-radius: 10px;
+}
+fieldset {
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+label {
+	display:block;
+	
+}
+textarea {
+	height: 10rem;
+	padding:1rem;
+}
+select {
+	font-size: 1rem;
+}
+button {
+	font-size: 1rem;
+	margin: 2rem 0;
+	background-color: #756591;
+	color: white;
+	border:none;
+	padding:0.5rem 1rem;
+	border-radius: 10px;
+}
+button:hover {
+	background-color: #D2729A;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+	display:block;
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border:none;
+}
+h1 {
+	font-family: 'Lobster', Helvetica;
+	font-size: 3rem;
+	text-shadow: 2px 2px 1px black;
+	color:white;
+}
+h3 {
+	font-family: 'Lobster', cursive;
+	font-size:2rem;
+	text-shadow: 2px 2px 1px black;
+}
+iframe {
+	padding: 2rem 0;
+	border-radius: 10px;
+}
+
+
+
+
+
