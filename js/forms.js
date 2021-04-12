@@ -1,23 +1,3 @@
-// Scroll thru sections
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
 
 window.onscroll = function() {myFunction()};
         
@@ -34,7 +14,24 @@ function myFunction() {
 
 
 
-// Accordions
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+
+    
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -100,7 +97,7 @@ function sendData() {
   XHR.addEventListener("load", function(event) {
     if (XHR.readyState === XHR.DONE) {
       if (XHR.status === 200) {
-        alert("Your message has been sent! Gu will get back to you.");
+        alert("Your message has been sent! Karen will get back to you.");
       } else {
         alert("Oh oh! We have a problem! " + XHR.responseText + ".");
       }
