@@ -1,62 +1,64 @@
 /* my guebsite */
+html {
+    scroll-behavior:smooth;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(../images/sakura-flowers.jpg);
-    background-size: cover;
-    width: 70%;
-    margin: 2rem auto;
+    margin: 0rem auto;
 }
-section{
+.content {
     background-color: #E89FA8;
-    border-radius: 20px;
-    border: solid 3px #84421F;
     text-align: center;
+    padding: 1rem 0rem;
 }
 h1 {
     font-family: 'Anton', sans-serif;
     color: white;
     font-size: 3rem;
     text-shadow: 3px 3px 2px #84421F;
-    margin: 1rem 10rem;
-    border: 4px dashed #F4D2D9;
+    background-color: #F4D2D9;
+    margin: auto;
+    padding: 2rem 1rem;
 }
-nav {
-    background-color: #CE7C8A;
-    padding: 0.2rem;
+#navbar {
+    overflow: hidden;
+    background-color: #a6646f;
+    padding: 1rem;
 }
-nav li {
-    list-style-type:none;
-    border: 3px solid white;
-    border-radius: 10px;
-    width: 8rem;
-    background-color: #FADAE5;
-    display: inline-block;
-    margin-right: 0.7rem;
-}
-nav a {
-    border: 3px solid dotted white;
+
+#navbar a {
     font-size: 1rem;
-    color: #83411F;
+    color: #ffffff;
     font-weight: bold;
-    text-decoration: none;
+    float: left;
     display: block;
-    padding: 0.5rem;
     text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    
 }
-a:visited, a:focus, a:hover {
+#navbar a:visited, #navbar a:focus, #navbar a:hover {
     background: #C9D182;
     border-radius: 10px;
 }
 a:active {
     background:#CE7C8A;
 }
-img {
-margin: 2rem;
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+.sticky + .content {
+    padding-top: 60px;
+}
+
 form {
 padding: 0 5rem;
 }
+
 label {
 display: block;
 }
@@ -64,18 +66,17 @@ textarea {
 height: 10rem;
 padding:1rem;
 }
+
 button {
 font-size: 1rem;
 margin: 2rem 0;
-background-color: #83411F;
-color: white;
+background-color: white;
+color: #a6646f;
 border:none;
 padding:0.5rem 1rem;
 border-radius: 10px;
 }
-button:hover {
-background-color: #D2729A;
-}
+
 legend {
 color:white;
 font-weight: bold;
@@ -88,15 +89,57 @@ border: 3px solid white;
 border-radius: 10px;
 margin-bottom: 2rem;
 }
-.bgcopyright {
-    text-decoration: none;
-    color: #CE7C8A;
+
+section {
+padding: 1rem 3rem;    
 }
-.portfolio {
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-    padding: 0.5rem;
-    text-align: center;
+#section2 {
+background-color: #a6646f;
 }
+
+#section1 {
+padding:5rem;
+}
+
+.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 1.5rem;
+width: 100%;
+text-align: left;
+border: none;
+outline: none;
+transition: 0.4s;
+
+}
+  
+.active, .accordion:hover {
+background-color: #ccc;
+}
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+
+width: 100%;
+background-color: white;
+display: none;
+overflow: hidden;
+max-height: 0;
+transition: max-height 0.2s ease-out;
+
+
+}
+
+.accordion:after {
+content: '\02795'; /* Unicode character for "plus" sign (+) */
+font-size: 1rem;
+color: #777;
+float: right;
+margin-left: 0.5rem;
+}
+      
+.active:after {
+content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
