@@ -8,28 +8,27 @@ body {
     margin: 0rem auto;
 }
 .content {
-    background-color: #E89FA8;
-    text-align: center;
+    background-color: white;
     padding: 1rem 0rem;
 }
 h1 {
     font-family: 'Anton', sans-serif;
     color: white;
     font-size: 3rem;
-    text-shadow: 3px 3px 2px #84421F;
-    background-color: #F4D2D9;
+    text-shadow: 3px 3px 2px darkgrey;
+    background-color: black;
     margin: auto;
     padding: 2rem 1rem;
 }
 #navbar {
     overflow: hidden;
-    background-color: #a6646f;
+    background-color: #777;
     padding: 1rem;
 }
 
 #navbar a {
     font-size: 1rem;
-    color: #ffffff;
+    color: black;
     font-weight: bold;
     float: left;
     display: block;
@@ -39,11 +38,11 @@ h1 {
     
 }
 #navbar a:visited, #navbar a:focus, #navbar a:hover {
-    background: #C9D182;
+    background: white;
     border-radius: 10px;
 }
 a:active {
-    background:#CE7C8A;
+    background:rgb(92, 81, 81);
 }
 
 .sticky {
@@ -71,7 +70,7 @@ button {
 font-size: 1rem;
 margin: 2rem 0;
 background-color: white;
-color: #a6646f;
+color: black;
 border:none;
 padding:0.5rem 1rem;
 border-radius: 10px;
@@ -90,11 +89,9 @@ border-radius: 10px;
 margin-bottom: 2rem;
 }
 
-section {
-padding: 1rem 3rem;    
-}
 #section2 {
-background-color: #a6646f;
+background-color: darkgrey;
+text-align: center;
 }
 
 #section1 {
@@ -143,3 +140,13 @@ margin-left: 0.5rem;
 content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
   
+h2 {
+
+font-family: 'Anton', sans-serif;
+color: white;
+font-size: 3rem;
+text-shadow: 3px 3px 2px darkgrey;
+background-color: black;
+padding: 5rem 2rem;
+margin: 0rem;
+}
